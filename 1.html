@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Todo List
+    </h1>
+    <form id="todoform">
+        <input type="text" id="todoinput" placeholder="Enter a task">
+        <button type="submit">Add</button>
+    </form>
+    <ul id="todolist">
+
+    </ul>
+   <script >
+    const form = document.getelementbyid("todoform")
+    const input = document.getelementbyid("todoinput")
+    const list = document.getelementbyid("todolist")
+     form.addeventlistener("submit",(e) => {
+        e.preventDefault();
+        const task = input.value.trim();
+        if (task !== ''){
+            addTodoItem(task);
+            input.value = ''
+                }
+               
+     });
+    function addTodoItem(task){
+        const item = document.createElement('li');
+        item.textContent = task;
+
+        const deleteButton = document.createElement('Button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.addEventListener('click',() => {
+           deleteTodoItem(item);
+        });
+
+        list.appendChild(deleteButton);
+        list.appendChild(item);
+    }
+    function deleteTodotem(item) {
+        item.remove();
+    }
+   </script>
+</body>
+</html>
