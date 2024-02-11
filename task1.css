@@ -1,0 +1,77 @@
+::-webkit-input-placeholder{
+    text-align: center;
+    font-size: 20px;
+}
+#name{
+  height: 60px; 
+  border-radius: 20px;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  margin-left: 25vw;
+}
+#rollno{
+    height: 60px; 
+    border-radius: 20px;
+    /* justify-content: space-evenly; */
+    align-items: center;
+     
+  }
+h1{
+    text-align: center;
+    background-color: rgb(216, 215, 215);
+}
+body{
+  background-color: grey;
+  align-items: center;
+}
+#button{
+  width: 70px;
+  height: 35px;
+  border-radius: 10px;
+  
+    
+  
+}
+#calc1{
+  height: 60px; 
+  border-radius: 20px;
+  align-items: center;
+  margin-left: 30vw;
+}
+#calc2{
+  height: 60px; 
+  border-radius: 20px;
+  align-items: center;
+  
+}
+ #add{
+  height: 50px; 
+  width: 100px;
+  border-radius: 20px;
+  align-items: center;
+  margin-left: 35vw;
+}
+#sub{ 
+   height: 50px; 
+  width: 100px;
+  border-radius: 20px;
+  align-items: center;
+}
+#mult{
+  height: 50px; 
+  width: 100px;
+  border-radius: 20px;
+  align-items: center;
+}
+#divide{
+  height: 50px; 
+  width: 100px;
+  border-radius: 20px;
+  align-items: center;
+
+} 
+button{
+  text-align: center;
+  font-size: 22px;
+}
+
